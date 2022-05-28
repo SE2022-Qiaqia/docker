@@ -1,0 +1,24 @@
+version: "3"
+
+volumes:
+  qiaqia-db:
+
+services:
+  back-end:
+    image: registry.cn-hangzhou.aliyuncs.com/salhe-general/se2022-qiaqia-back-end:nightly
+
+  database:
+    image: postgres:14.2
+    volumes:
+      - qiaqia-db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=hi_postgresql
+      - POSTGRES_PASSWORD=hellothisispassword
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    
+  web:
+    image: registry.cn-hangzhou.aliyuncs.com/salhe-general/se2022-qiaqia-front-end:nightly
+    ports:
+      - 80:80
+    depends_on:
+      - back-end

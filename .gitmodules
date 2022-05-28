@@ -1,0 +1,6 @@
+[submodule "src/front-end"]
+	path = src/front-end
+	url = https://github.com/SE2022-Qiaqia/front-end.git
+[submodule "src/back-end-go"]
+	path = src/back-end-go
+	url = https://github.com/SE2022-Qiaqia/back-end-go.git
