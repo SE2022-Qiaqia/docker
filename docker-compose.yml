@@ -23,6 +23,7 @@ services:
     build: ./src/back-end-go/
     volumes:
       - ./server-go/config.yml:/usr/src/app/config.yml
+      - ./server-go/log:/usr/src/app/log
       - ./scripts/wait-for-it.sh:/usr/src/app/wait-for-it.sh:ro
     depends_on:
       - database
