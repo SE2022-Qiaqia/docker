@@ -22,7 +22,10 @@
 1. 克隆仓库
 
 ```shell
-git clone https://github.com/SE2022-Qiaqia/docker.git
+git clone https://github.com/SE2022-Qiaqia/docker.git course-system-docker
+
+cd course-system-docker
+
 git submodule update --init --recursive
 ```
 
