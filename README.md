@@ -2,6 +2,14 @@
 
 借助Docker完成一键部署项目。
 
+## 运行项目
+
+请确保已安装以下工具：
+
+- Linux：Docker & Docker Compose
+- MacOS: Docker Desktop
+- Windows: Docker Desktop
+
 ### 启动项目(Spring后端)
 
 1. 更新镜像并启动服务，默认使用`nightly`版本的镜像。
