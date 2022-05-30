@@ -49,3 +49,10 @@ docker-compose up
 3. 访问服务
 
 http://localhost/
+
+#### 账户
+
+|角色|用户名|密码|
+|----|------|----|
+|管理员|admin|hello-admin|
+|教师|请通过管理员查看用户列表获取|demo-password|
