@@ -29,33 +29,35 @@
 
 1. 克隆仓库
 
-```shell
-git clone https://github.com/SE2022-Qiaqia/docker.git course-system-docker
+    ```shell
+    git clone https://github.com/SE2022-Qiaqia/docker.git course-system-docker
 
-cd course-system-docker
+    cd course-system-docker
 
-git submodule update --init --recursive
-```
+    git submodule update --init --recursive
+    ```
 
 2. 构建并启动服务
 
-暂时没有提供预打包好的Docker镜像，所以首次运行可能会花较长的时间完成镜像的构建，那是正常的。
+    暂时没有提供预打包好的Docker镜像，所以首次运行可能会花较长的时间完成镜像的构建，那是正常的。
 
-```shell
-docker-compose up
+    ```shell
+    docker-compose up
 
-# 或者使用下面这条命令
-# docker-compose up --build
+    # 或者使用下面这条命令
+    # docker-compose up --build
 
-```
+    ```
 
 3. 访问服务
 
-http://localhost/
+    http://localhost/
 
-#### 账户
+4. 预设账户密码
 
-|角色|用户名|密码|
-|----|------|----|
-|管理员|admin|hello-admin|
-|教师|请通过管理员查看用户列表获取|demo-password|
+    在[用于初始化数据库的SQL文件](https://github.com/SE2022-Qiaqia/docker/tree/master/db/init)中，我们提供了一些用于初始化系统的数据，包含了一些示例学院、课程、教师、管理员等。
+    
+    |角色|用户名|密码|
+    |----|------|----|
+    |管理员|admin|hello-admin|
+    |教师|请通过管理员查看用户列表获取|demo-password|
