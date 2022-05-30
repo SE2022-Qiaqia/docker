@@ -39,11 +39,14 @@ git submodule update --init --recursive
 
 2. 构建并启动服务
 
+暂时没有提供预打包好的Docker镜像，所以首次运行可能会花较长的时间完成镜像的构建，那是正常的。
+
 ```shell
 docker-compose up
 
 # 或者使用下面这条命令
 # docker-compose up --build
+
 ```
 
 3. 访问服务
